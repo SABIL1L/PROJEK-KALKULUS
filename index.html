@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/img/LOGO.png" type="image/png">
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Integral</title>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon' style="color: #2e4156;"></i>
+        </a>
+        
+        <!--========== NAV ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href= "home.html" class="nav__logo">MUGAR MATH</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#materi" class="nav__link active-link">Definisi</a></li>
+                        <li class="nav__item"><a href="#ITT" class="nav__link">Integral tak tentu</a></li>
+                        <li class="nav__item"><a href="#decoration" class="nav__link">Integral tentu</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Tentang Kami</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== MATERI ==========-->
+            <section class="materi" id="materi">
+                <div class="materi__container bd-container bd-grid">
+                    <div class="materi__img">
+                        <img src="assets/img/ilustrasii.png" alt="">
+                        <p> <b class="highlighted-text" style="color: white;">
+                            <i>Source: <a href="https://id.wikipedia.org/wiki/Integral/" target="_blank" style="color: white;">https://id.wikipedia.org/wiki/Integral/</a></i>
+                          </b></p>
+                    </div>
+
+                    <div class="share__data">
+                        <h1 class="materi__title">Integral</h1>
+                        <p class="materi__description">Integral adalah salah satu konsep dalam matematika, khususnya dalam kalkulus.
+                            Konsep ini digunakan untuk menghitung akumulasi nilai, seperti luas di bawah kurva, volume benda, panjang kurva, atau total perubahan suatu fungsi.</p>
+                        <p class="materi__description">Integral juga dikenal sebagai <b>kebalikan dari turunan</b>. Contohnya, jika sebuah fungsi <b>𝑓(𝑥)</b> diturunkan, 
+                            hasilnya adalah <b>𝑓′(𝑥)</b>. Sedangkan, jika sebuah fungsi <b>𝑓′(𝑥)</b> diintegrasikan hasilnya adalah <b>𝑓(𝑥)</b>.</p>
+                            <p class="materi__description">Terdapat dua jenis Integral, yaitu <b>Integral tak tentu</b> dan <b>Integral tentu.</b></p>
+                        <a href="#ITT" class="button">Pelajari lebih lanjut</a>
+                    </div>   
+                </div>
+            </section>
+
+            <!--========== Integrak Tak Tentu ==========-->
+            <section class="share section bd-container" id="ITT">
+                <div class="share__container bd-grid">
+                    <div class="share__data">
+                        <h2 class="section-title-center">Integral tak tentu</h2>
+                        <p class="share__description">Integral tak tentu adalah operasi yang menghasilkan fungsi antiturunan dari suatu fungsi tertentu.
+                            Integral ini tidak memiliki batas dan belum memiliki nilai yang jelas. Nilai yang belum jelas ini dilambangkan dengan konstanta (C).
+                        </p>
+                        <h2 class="section-title-center">Sifat-sifat integral tak tentu</h2>
+                        <img src="assets/img/sdd.png" alt=""></img>
+                    </div>
+
+                    <div class="share__img">
+                        <h2 class="section-title-center">Rumus-rumus integral dasar</h2>
+                        <img src="assets/img/tak_tentu.png" alt="">
+                    </div>
+                    
+                    <div class="share__data">
+                        <h2 class="section-title-center">Soal dan cara pengerjaan</h2>
+                        <p><b>SOAL</b></p>
+                        <p>Carilah nilai integral tak tentu dari:
+                        <p><img src="assets/img/soal1.png" alt=""></p>
+                        <br><b>JAWAB</b></br>
+                        <br>1. Pisahkan integral menggunakan sifat penjumlahan</br>
+                        <img src="assets/img/jawab1.png" alt="">
+                        <br>2. Hitung masing masing menggunakan sifat pangkat</br>
+                        <img src="assets/img/jawab2.png" alt="">
+                        <br>3. Gabungkan keduanya dan tambahkan konstanta <b>(C)</b></br>
+                        <img src="assets/img/jawab3.png" alt="">
+                        </p>
+                        <div class="share__img" id="UndefiniteCalculator">
+                            <h2 class="section-title-center">Kalkulator Integral Tak Tentu</h2>
+                            <div class="send__container">
+                                <p class="share__description">Masukkan fungsi (contoh: 3x^2 - 2x + 5):</p>
+                                <input type="text" id="functionInput" placeholder="Contoh: 3x^2 - 2x + 5" class="calc__input">
+                                <button onclick="calculateIntegral()" class="button" style="background-color: #2e4156;">Hitung Integral</button>
+                                <div class="share__description" id="result"></div>
+                            </div>
+                        </div>
+                    
+                        <div>
+                            <h2 class="section-title-center">Latih pemahamanmu</h2>
+                            <a href="QUIZ/quiz.html" class="button" target="_blank">Latihan Soal Integral tak tentu</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--========== Integral Tentu ==========-->
+
+            <section class="decoration section bd-container" id="decoration">
+                <div class="share__container bd-grid">
+                    <div class="share__data" id="UnCal">
+                        <h2 class="section-title-center">Integral tentu</h2>
+                        <p class="share__description">Integral tentu adalah operasi matematika yang digunakan untuk menghitung <b>luas daerah di bawah
+                             kurva suatu fungsi 𝑓(𝑥)</b> dalam interval tertentu <b>[𝑎,𝑏]</b>. Hasilnya bukanlah <b>suatu fungsi</b>, melainkan <b>suatu nilai</b> karena integral
+                             ini menghitung akumulasi nilai dalam batas tertentu.</p>
+                        <h2 class="section-title-center">Sifat-sifat integral tentu</h2>
+                        <img src="assets/img/sitt.png" alt=""></img>
+                    </div>
+
+                    <div class="share__img">
+                        <h2 class="section-title-center">Korelasi integral tentu dan Integral tak tentu</h2>
+                        <p>
+                            Jika F(x) adalah integral tak tentu dari 𝑓(𝑥) maka integral tentu dapat dihitung dengan mengambil nilai integral tak tentu 𝐹(𝑥)
+                             di batas atas <b>(𝑏)</b> dan batas bawah <b>(𝑎)</b> lalu menghitung selisihnya:
+                        </p>
+                        <img src="assets/img/rumustentu.png" alt="">
+                        <p>
+                            dengan syarat bahwa 𝐹′(𝑥) = 𝑓(𝑥). Artinya, turunan dari 𝐹(𝑥) menghasilkan kembali fungsi integrannya 𝑓(𝑥)
+                        </p>
+                    </div>
+
+                    <div class="share__data">
+                        <h2 class="section-title-center">Soal dan cara pengerjaan</h2>
+                        <p><b>SOAL</b></p>
+                        <p>Hitung integral tentu dari 𝑓(𝑥) = 2𝑥+1 pada interval [0,2]</p>
+                        <br><b>JAWAB</b></br>
+                        <br>1. Cari integral tak tentunya</br>
+                        <img src="assets/img/ss1.png" alt="">
+                        <br>2. Substitusi batas atas (𝑏=2) dan batas bawah (𝑎=0)</br>
+                        <img src="assets/img/ss2.png" alt="">
+                        <br>3. Hitung nilai-nya</br>
+                        <img src="assets/img/ss3.png" alt="">
+                    </div>
+                </div>
+            <div class="share__img" id="DefiniteCalculator">
+                <h2 class="section-title-center">Kalkulator Integral Tentu</h2>
+                <div class="send__container">
+                    <form>
+                        <div class="form-group">
+                            <label for="functionInputCertain">Fungsi (contoh: 2x^2 + 3x^1 + 4):</label>
+                            <input type="text" id="functionInputCertain" placeholder="Masukkan fungsi">
+                        </div>
+                        <div class="form-group">
+                            <label for="lowerBound">Batas Bawah<b>(𝑎)</b>:</label>
+                            <input type="number" id="lowerBound" placeholder="Masukkan batas bawah">
+                        </div>
+                        <div class="form-group">
+                            <label for="upperBound">Batas Atas<b>(𝑏)</b>:</label>
+                            <input type="number" id="upperBound" placeholder="Masukkan batas atas">
+                        </div>
+                        <button type="button" style="display: inline-block; background-color: #2e4156; color: #fff; padding: 1rem 1.5rem; border-radius: 1rem;" onclick="calculateDefiniteIntegral()">Hitung Integral</button>
+                    </form>
+                    <div id="resultCertain"></div>
+                </div>
+                <div>
+                    <h2 class="section-title-center">Latih pemahamanmu</h2>
+                    <a href="QUIZ/quiz2.html" class="button" target="_blank">Latihan Soal Integral tentu</a>
+                </div>
+            </div>
+                    
+            </section>
+
+            <!--========== ABOUT  ==========-->
+            <section class="about section bd-container" id="about">
+                <h2 class="section-title">Tentang <br> Kami</h2>
+
+                <div class="about__container bd-grid">
+
+                    <div class="about__content">
+                        <img src="assets/img/SABIL.png" alt="" class="about__img">
+                        <h3 class="about__title">Muhamad Sabilil Haq</h3>
+                        <span class="about__category">247006111198</span>
+                        <a href="https://www.instagram.com/sabilil_haq_/profilecard" class="button about__button" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                    </div>
+
+                    <div class="about__content">
+                        <img src="assets/img/KENT.png" alt="" class="about__img">
+                        <h3 class="about__title">Muhammad Kent Faiq Arifien</h3>
+                        <span class="about__category">247006111192</span>
+                        <a href="https://www.instagram.com/mhmmadkent/profilecard/" class="button about__button" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                    </div>
+    
+                    <div class="about__content">
+                        <img src="assets/img/YUSEP.png" alt="" class="about__img">
+                        <h3 class="about__title">Yusep Muhamad Nurhakim</h3>
+                        <span class="about__category">247006111186</span>
+                        <a href="https://www.instagram.com/yusep_mn/profilecard/" class="button about__button" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                    </div>
+
+                    <div class="about__content">
+                        <img src="assets/img/RAHMAN.png" alt="" class="about__img">
+                        <h3 class="about__title">Rahman Riana Zulfikri</h3>
+                        <span class="about__category">247006111188</span>
+ 
+                        <a href="https://www.instagram.com/rahmanriana05/profilecard/" class="button about__button" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a class="footer__logo">MUGAR MATH</a>
+                    </h3>
+                    <p class="footer__description">Hitung, pahami, temukan solusi. 🚀📚</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Konten</h3>
+                    <ul>
+                        <li><a href="#materi" class="footer__link">Definisi</a></li>
+                        <li><a href="#ITT" class="footer__link">Integral tak tentu</a></li>
+                        <li><a href="#decoration" class="footer__link">Integral tentu</a></li>
+                        <li><a href="#about" class="footer__link">Tentang kami</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Kalkulator</h3>
+                    <ul>
+                        <li><a href="#UndefiniteCalculator" class="footer__link">Kalkulator integral tak tentu</a></li>
+                        <li><a href="#DefiniteCalculator" class="footer__link">Kalkulator integral tentu</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Kontak</h3>
+                    <a href="mailto:mugarmath@gmail.com" style="width: 12px; height: 12px; color: #fff; text-decoration: underline;">mugarmath@gmail.com</a>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2024 MUGAR MATH. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

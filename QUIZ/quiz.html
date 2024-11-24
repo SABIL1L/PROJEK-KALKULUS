@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/LOGO.png" type="image/png">
+    <!--========== BOX ICONS ==========-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    
+    <title>Integral</title>
+</head>
+<body>
+    <!--========== NAV ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href= "../home.html" class="nav__logo">MUGAR MATH</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html#materi" class="nav__link">Definisi</a></li>
+                    <li class="nav__item"><a href="../index.html#ITT" class="nav__link">Integral tak tentu</a></li>
+                    <li class="nav__item"><a href="../index.html#decoration" class="nav__link">Integral tentu</a></li>
+                    <li class="nav__item"><a href="../index.html#about" class="nav__link">Tentang Kami</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="l-main">
+        <div id="quiz"></div>
+        <button id="submit">Submit</button>
+        <button id="show-explanation" style="display: none;">Lihat Pembahasan</button>
+        <button id="try-again" style="display: none;">Coba Lagi</button>
+        <div id="result"></div>
+        <script src="quiz.js"></script>
+    </main>
+    
+</body>
+</html>
